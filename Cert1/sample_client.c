@@ -1,4 +1,4 @@
-/* usecertfolder.c
+/* sample_client.c
  *
  * Copyright (C) 2006-2020 wolfSSL Inc.
  *
@@ -23,7 +23,7 @@
 #include <wolfssl/wolfcrypt/settings.h>
 #include <wolfssl/openssl/ssl.h>
 
-#include "usecertfolder.h"
+#include "sample_client.h"
 
 #define INLINE
 #define WOLFSSL_SUCCESS 1

@@ -20,8 +20,8 @@
  */
 
 
-#ifndef WOLFSSL_USECERTFOLDER_H
-#define WOLFSSL_USECERTFOLDER_H
+#ifndef WOLFSSL_SAMPLECLIENT_H
+#define WOLFSSL_SAMPLECLIENT_H
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -37,5 +37,5 @@
 
 void echoclient_test(void* args);
 
-#endif /* WOLFSSL_USECERTFOLDER_H */
+#endif /* WOLFSSL_SAMPLECLIENT_H */
 

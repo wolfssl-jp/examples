@@ -1,5 +1,5 @@
-PROG := wolfssl_certfolder_example
-SRCS := usecertfolder.c
+PROG := wolfssl_sample_client
+SRCS := sample_client.c
 CFLAGS  := -g -Wall -MMD -MP
 LDFLAGS := -lwolfssl
 OBJS := $(SRCS:%.c=%.o)

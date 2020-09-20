@@ -159,6 +159,13 @@ void client_certfolder_test()
         the input/output facility for the SSL connection. */
         wolfSSL_set_fd(ssl, sockfd);
 
+        /* SNI */
+        if (wolfSSL_CTX_UseSNI(ctx, 0, TARGETSERVER[i],
+                    (word16) XSTRLEN(TARGETSERVER[i])) != WOLFSSL_SUCCESS) {
+            wolfSSL_CTX_free(ctx); ctx = NULL;
+            printf("UseSNI failed\n");
+        }
+
         do {
             err = 0; /* Reset error */
             /*5. call wolfSSL_connect() to start TLS handshake */
